@@ -1,6 +1,7 @@
 body {
     background-color: #191c19;
     color: white;
+    margin: 0;
 }
 
 .content {
@@ -21,6 +22,7 @@ ul {
 .options ul {
     display: flex;
     gap: 20px;
+    padding: 0;
 }
 
 .options li:hover {
@@ -30,4 +32,14 @@ ul {
 
 .active {
     border-bottom: 3px solid #d5c866;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name p {
+    margin: 0;
 }
