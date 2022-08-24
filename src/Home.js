@@ -22,6 +22,10 @@ const createNavBar = () => {
     liHome.innerHTML = 'Home';
     liContact.innerHTML = 'Contact';
 
+    liMenu.setAttribute('id', 'menu');
+    liHome.setAttribute('id','home');
+    liContact.setAttribute('id', 'contact');
+
     ulNavBar.appendChild(liMenu);
     ulNavBar.appendChild(liHome);
     ulNavBar.appendChild(liContact);
@@ -114,6 +118,20 @@ const start = () => {
     createMainInfo();
 }
 
+const halfStart = () => {
+    content.appendChild(main);
+    const liHome = document.querySelector('#home');
+    liHome.className = 'active';
+}
+
+const removeHome = () => {
+    const liHome = document.querySelector('#home');
+    liHome.className = '';
+    content.removeChild(main);
+}
+
 export {
-    start
+    start,
+    removeHome,
+    halfStart
 }
