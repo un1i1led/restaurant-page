@@ -40,20 +40,12 @@ const lastName = document.createElement('input');
 const email = document.createElement('input');
 const subject = document.createElement('textarea');
 const sendBtn = document.createElement('button');
+const inputs = [name, lastName, email, subject];
 const formh2 = document.createElement('h2');
 
-const send = () => {
-    form.remove();
-    formh2.innerHTML = 'Sent!';
+for (const input of inputs){
+    input.required = true;
 }
-
-name.addEventListener('blur', function(){
-    if (name.value == ""){
-        console.log("no name");
-    }
-})
-
-sendBtn.addEventListener('click', send);
 
 const makeDivTwo = () => {
     formh2.innerHTML = 'Message Us!';
@@ -82,7 +74,6 @@ const makeDivTwo = () => {
     subject.setAttribute('name', 'subject');
     form.appendChild(subject);
 
-    sendBtn.setAttribute('type', 'button');
     sendBtn.className = 'send-btn';
     sendBtn.innerHTML = 'Send';
     form.appendChild(sendBtn);
