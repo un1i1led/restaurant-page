@@ -107,7 +107,7 @@ const createMainInfo = () => {
     mainInfo.appendChild(locationH2);
 
     const locationP = document.createElement('p');
-    locationP.innerHTML = '110 Fantastic Lane, Seattle, Washington';
+    locationP.innerHTML = '110 Fantastic Lane, Castaic, California';
     locationP.classList = 'weighted';
     mainInfo.appendChild(locationP);
 }
