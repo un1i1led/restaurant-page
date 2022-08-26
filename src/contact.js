@@ -121,10 +121,14 @@ const startContact = () => {
 }
 
 const halfContact = () => {
+    const liContact = document.querySelector('#contact');
+    liContact.className = 'active';
     content.appendChild(main);
 }
 
 const removeContact = () => {
+    const liContact = document.querySelector('#contact');
+    liContact.className = '';
     content.removeChild(main);
 }
 
