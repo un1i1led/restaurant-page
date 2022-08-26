@@ -138,6 +138,7 @@ input {
     color: white;
     width: 220px;
     transition: 0.2s;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 input:focus, textarea:focus {
