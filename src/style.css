@@ -92,8 +92,127 @@ ul {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
 }
- 
-.main-contact {
+
+.contact-info {
     display: flex;
     justify-content: center;
+}
+ 
+.main-contact {
+    display: grid;
+    grid-template-rows: 0.5fr 3fr;
 } 
+
+.div-holder {
+    display: flex;
+    justify-content: space-around;
+}
+
+.three-div {
+    height: 500px;
+    width: 300px;
+    border-radius: 2%;
+    border: 1px solid white;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 0.2s;
+}
+
+.three-div:hover {
+    border: 1px solid #d5c866;
+}
+
+.form {
+    margin-top: 69.92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+input {
+    background-color: #232523;
+    border: 1px solid #232523;
+    border-radius: 2px;
+    height: 25px;
+    color: white;
+    width: 220px;
+    transition: 0.2s;
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid #d5c866;
+}
+
+input:hover {
+    border: 1px solid white;
+}
+
+::placeholder {
+    color: white;
+}
+
+textarea {
+    background-color: #232523;
+    border: 1px solid #232523;
+    resize: none;
+    width: 220px;
+    color: white;
+    height: 50px;
+    transition: 0.2s;
+}
+
+textarea:hover {
+    border: 1px solid white;
+}
+
+.div-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-three-separator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.iframe {
+    width: 290px;
+    height: 490px;
+    border-radius: 2%;
+}
+
+.send-btn {
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 2%;
+    color: white;
+    background-color: #232523;
+    transform: 0.2s;
+}
+
+.send-btn:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.form-h2 {
+    margin: 0;
+    margin-top: 19.92px;
+}
