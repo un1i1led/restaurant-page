@@ -1,11 +1,12 @@
 import {start, removeHome, halfStart} from './Home';
-import {startContact, removeContact} from './contact';
+import {startContact, removeContact, halfContact} from './contact';
 import './style.css';
 
 const body = document.body;
 export const content = document.createElement('div');
 content.className = 'content';
 body.appendChild(content);
+let contactInitialized = false;
 
 
 
@@ -20,8 +21,14 @@ contact.addEventListener('click', function() {
     }
 
     liContact.className = 'active';
+    if (contactInitialized == false){
+        startContact();
+        contactInitialized = true;
+    } else {
+        halfContact();
+    }
 
-    startContact();
+    
 
 });
 
