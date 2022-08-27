@@ -1,5 +1,5 @@
 import {content} from './index';
-import Icon from './icon.png';
+import Icon from './img/icon.png';
 
 const createNavBar = () => {
     const navBar = document.createElement('div');
