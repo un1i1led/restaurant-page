@@ -88,6 +88,8 @@ ul {
     margin: 5px 0 5px 0;
 }
 
+/* Contact */
+
 .big-contact {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
@@ -216,4 +218,11 @@ textarea:hover {
 .form-h2 {
     margin: 0;
     margin-top: 19.92px;
+}
+
+/* Menu */
+
+.first-salad, .pasta-clam {
+    height: 500px;
+    width: 500px;
 }
