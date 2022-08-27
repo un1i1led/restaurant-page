@@ -21,6 +21,7 @@ const liContact = document.querySelector('#contact');
 const liMenu = document.querySelector('#menu');
 
 liContact.addEventListener('click', function() {
+    content.style.height = "100vh";
     if (liHome.className == 'active'){
         removeHome();
     } else if (liMenu.className == 'active'){
@@ -41,6 +42,7 @@ liContact.addEventListener('click', function() {
 
 
 liHome.addEventListener('click', function() {
+    content.style.height = "100vh";
     if (liContact.className == 'active') {
         removeContact();
     } else if (liMenu.className == 'active'){
@@ -55,6 +57,8 @@ liHome.addEventListener('click', function() {
 });
 
 liMenu.addEventListener('click', function(){
+    content.style.height = "150vh";
+
     if (home.className == 'active'){
         removeHome();
     } else if (contact.className == 'active'){
