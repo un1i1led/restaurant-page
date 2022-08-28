@@ -2,11 +2,12 @@ body {
     background-color: #191c19;
     color: white;
     margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .content {
     display: grid;
-    grid-template-rows: 0.5fr 3fr;
+    grid-template-rows: 0fr 2fr;
     height: 100vh;
 }
 
@@ -222,7 +223,81 @@ textarea:hover {
 
 /* Menu */
 
-.first-salad, .pasta-clam {
+.salad-div, .pasta-div,
+.avocado-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.salad-div:hover .salad-info-div,
+.pasta-div:hover .pasta-info-div,
+.avocado-div:hover .avocado-info-div {
+    visibility: visible;
+    opacity: 1;
+}
+
+.salad-img-div {
+    display: flex;
+    position: relative;
+}
+
+
+.first-salad {
     height: 500px;
     width: 500px;
+}
+
+.salad-info-div, .pasta-info-div,
+.avocado-info-div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: rgba(36, 62, 206, 0.6); */
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .2s, visibility .2s;
+}
+
+.salad-info-div > h2,
+.pasta-info-div > h2 {
+    transition: 0.2s;
+    transform: translateY(-3em) translateX(18.4em);
+}
+
+.avocado-h2 {
+    transition: 0.2s;
+    transform: translateY(-3em) translateX(18.5em);
+}
+
+.salad-info-div > h2 {
+    margin-bottom: 0;
+}
+
+.saladP, .pastaP {
+    transform: translateY(0) translateX(13.5em);
+    width: 200px;
+}
+
+.pasta-clam {
+    height: 500px;
+    width: 500px;
+}
+
+.avocado-img {
+    height: 600px;
+    width: 600px;
+}
+
+.avocadoP {
+    transform: translateY(0) translateX(14.4em);
+    width: 200px;
 }
